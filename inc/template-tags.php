@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 if ( ! function_exists( 'understrap_posted_on' ) ) {
 	function understrap_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) && !is_front_page()) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s"> (%4$s) </time>';
 		}
 		$time_string = sprintf( $time_string,
@@ -41,7 +41,12 @@ if ( ! function_exists( 'understrap_posted_on' ) ) {
 				esc_html( get_the_author() )
 			)
 		);
-		echo $posted_on . $byline; // WPCS: XSS OK.
+		if (!is_front_page()) {
+			echo $posted_on . $byline; // WPCS: XSS OK.
+		}else {
+			echo $posted_on; // WPCS: XSS OK.
+		}
+		
 	}
 }
 
