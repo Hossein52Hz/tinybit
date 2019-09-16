@@ -23,17 +23,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<!-- Do the left sidebar check -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			
+			<div id="site-info">
+			<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+			<p class="description">
+			<?php bloginfo( 'description' ); ?>
+			</p>			
+			<div>
+				<ul class="social-link">
+				<?php show_social_media(); ?>
+				</ul>
+			</div>
+		</div>
 
-			<main class="site-main" id="main">
-
-				<?php if ( have_posts() ) : ?>
-
-					<header class="page-header">
+			<header class="page-header">
 						<?php
 						the_archive_title( '<h1 class="page-title">', '</h1>' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 					</header><!-- .page-header -->
+			<main class="site-main" id="main">
+
+				<?php if ( have_posts() ) : ?>
+
+					
 
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
