@@ -32,6 +32,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
+			<div id="site-info">
+			<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+			<p class="description">
+			<?php bloginfo( 'description' ); ?>
+			</p>
+			
+			<div>
+				<ul class="social-link">
+				<?php show_social_media(); ?>
+				</ul>
+			</div>
+		</div>
 			<main class="site-main" id="main">
 
 				<?php if ( have_posts() ) : ?>
