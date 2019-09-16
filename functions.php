@@ -33,3 +33,25 @@ foreach ( $understrap_includes as $file ) {
 	}
 	require_once $filepath;
 }
+
+function show_social_media() { ?>
+	<?php if ( get_theme_mod( 'understrap_author_options_facebook_url' ) ): ?>
+		  <li><a href="<?php echo esc_attr(get_theme_mod( 'understrap_author_options_facebook_url' )); ?>"><i class="fa fa-facebook"></i></a></li>
+	<?php endif; ?>
+
+	<?php if ( get_theme_mod( 'understrap_author_options_twitter_url' ) ): ?>
+		  <li><a href="<?php echo esc_attr(get_theme_mod( 'understrap_author_options_twitter_url' )); ?>"><i class="fa fa-twitter"></i></a></li>
+	<?php endif; ?>
+
+	<?php if ( get_theme_mod( 'understrap_author_options_github_url' ) ): ?>
+		  <li><a href="<?php echo esc_attr(get_theme_mod( 'understrap_author_options_github_url' )); ?>"><i class="fa fa-github"></i></a></li>
+	<?php endif; ?>
+
+	<?php if ( get_theme_mod( 'understrap_author_options_gitlab_url' ) ): ?>
+		  <li><a href="<?php echo esc_attr(get_theme_mod( 'understrap_author_options_gitlab_url' )); ?>"><i class="fa fa-gitlab"></i></a></li>
+	<?php endif; ?>
+
+	<?php if ( get_theme_mod( 'understrap_author_options_linkedin_url' ) ): ?>
+		  <li><a href="<?php echo esc_attr(get_theme_mod( 'understrap_author_options_linkedin_url' )); ?>"><i class="fa fa-linkedin"></i></a></li>
+	<?php endif;
+}?>
