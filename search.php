@@ -22,24 +22,35 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+						
+			<div id="site-info">
+				<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+				<p class="description">
+				<?php bloginfo( 'description' ); ?>
+				</p>			
+				<div>
+					<ul class="social-link">
+					<?php show_social_media(); ?>
+					</ul>
+				</div>
+			</div>
 
+				<header class="page-header">
+
+					<h1 class="page-title">
+						<?php
+						printf(
+							/* translators: %s: query term */
+							esc_html__( 'Search Results for: %s', 'understrap' ),
+							'<span>' . get_search_query() . '</span>'
+						);
+						?>
+					</h1>
+
+				</header><!-- .page-header -->
 			<main class="site-main" id="main">
 
 				<?php if ( have_posts() ) : ?>
-
-					<header class="page-header">
-
-							<h1 class="page-title">
-								<?php
-								printf(
-									/* translators: %s: query term */
-									esc_html__( 'Search Results for: %s', 'understrap' ),
-									'<span>' . get_search_query() . '</span>'
-								);
-								?>
-							</h1>
-
-					</header><!-- .page-header -->
 
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -50,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						 * If you want to overload this in a child theme then include a file
 						 * called content-search.php and that will be used instead.
 						 */
-						get_template_part( 'loop-templates/content', 'search' );
+						get_template_part( 'loop-templates/content', get_post_format() );
 						?>
 
 					<?php endwhile; ?>
