@@ -129,6 +129,106 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 				)
 			)
 		);
+
+
+
+    //  =============================
+    //  = Profile section              =
+    //  =============================
+    $wp_customize->add_section('understrap_profile', array(
+        'title'    => __('Author Profile', 'understrap'),
+        'priority' => 40,
+    ));
+    
+    //full name
+    $wp_customize->add_setting('understrap_author_options_full_name', array(
+        'default'        => __('Enter Full Name', 'understrap'),
+		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+        
+    ));
+    $wp_customize->add_control('understrap_full_name', array(
+        'label'      => __('Full Name', 'understrap'),
+        'section'    => 'understrap_profile',
+		'settings'   => 'understrap_author_options_full_name',
+		
+	));
+	
+    //career
+    $wp_customize->add_setting('understrap_author_options_career', array(
+        'default'        => 'Enter your career',
+		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+	));
+	
+    $wp_customize->add_control('understrap_career', array(
+        'label'      => __('Career', 'understrap'),
+        'section'    => 'understrap_profile',
+		'settings'   => 'understrap_author_options_career',
+    ));
+
+  
+    //linkedin
+    $wp_customize->add_setting('understrap_author_options_linkedin_url', array(
+        'default'        => __('Enter Linkedin URL', 'understrap'),
+		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('understrap_linkedin_url', array(
+        'label'      => __('Linkedin URL', 'understrap'),
+        'section'    => 'understrap_profile',
+		'settings'   => 'understrap_author_options_linkedin_url',
+    ));
+   
+    //github
+    $wp_customize->add_setting('understrap_author_options_github_url', array(
+        'default'        => __('Enter Github URL', 'understrap'),
+		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',        
+    ));
+    $wp_customize->add_control('understrap_github_url', array(
+        'label'      => __('Github URL', 'understrap'),
+        'section'    => 'understrap_profile',
+		'settings'   => 'understrap_author_options_github_url',
+    ));
+
+	//gitlab
+    $wp_customize->add_setting('understrap_author_options_gitlab_url', array(
+        'default'        => __('Enter Gitlab URL', 'understrap'),
+		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',        
+    ));
+    $wp_customize->add_control('understrap_gitlab_url', array(
+        'label'      => __('Gitlab URL', 'understrap'),
+        'section'    => 'understrap_profile',
+		'settings'   => 'understrap_author_options_gitlab_url',
+    ));
+
+   //twitter
+  	$wp_customize->add_setting('understrap_author_options_twitter_url', array(
+		'default'        => __('Enter Twitter URL', 'understrap'),
+		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+	$wp_customize->add_control('understrap_twitter_url', array(
+		'label'      => __('Twitter URL', 'understrap'),
+		'section'    => 'understrap_profile',
+		'settings'   => 'understrap_author_options_twitter_url',
+	)); 
+
+    //Facebook
+	$wp_customize->add_setting('understrap_author_options_facebook_url', array(
+		'default'        => __('Enter Facebook URL', 'understrap'),
+		'capability'     => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+	$wp_customize->add_control('understrap_facebook_url', array(
+		'label'      => __('Facebook URL', 'understrap'),
+		'section'    => 'understrap_profile',
+		'settings'   => 'understrap_author_options_facebook_url',
+	));
+
+
 	}
 } // endif function_exists( 'understrap_theme_customize_register' ).
 add_action( 'customize_register', 'understrap_theme_customize_register' );
