@@ -277,6 +277,56 @@ section {
     border: none;
 }
 
+/* search form */
+.author-info #searchform {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.author-info #searchform #s {
+    text-align: center;
+    border-radius: .25rem;
+}
+
+.author-info #searchform .input-group-append {
+    display: none;
+}
+
+.author-info #searchform .form-control {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #dddddd40;
+}
+
+.author-info #searchform input::placeholder {
+    color: #fff;
+}
+
+.author-info #searchform input:focus::placeholder {
+    color: transparent;
+}
+
+.author-info #searchform input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.author-info #searchform input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+/* FF 4-18 */
+.author-info #searchform input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* FF 19+ */
+.author-info #searchform input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/* IE 10+ */
+
+
 
 /* pagination */
 .pagination {
@@ -444,6 +494,12 @@ img.wp-post-image {
     color: #2200ca;
     padding-left: 0;
 }
+
+
+.form-control:focus, .wpcf7 .wpcf7-validation-errors:focus, .wpcf7 input:focus[type=color], .wpcf7 input:focus[type=date], .wpcf7 input:focus[type=datetime-local], .wpcf7 input:focus[type=datetime], .wpcf7 input:focus[type=email], .wpcf7 input:focus[type=file], .wpcf7 input:focus[type=month], .wpcf7 input:focus[type=number], .wpcf7 input:focus[type=range], .wpcf7 input:focus[type=search], .wpcf7 input:focus[type=submit], .wpcf7 input:focus[type=tel], .wpcf7 input:focus[type=text], .wpcf7 input:focus[type=time], .wpcf7 input:focus[type=url], .wpcf7 input:focus[type=week], .wpcf7 select:focus, .wpcf7 textarea:focus{
+    box-shadow: none;
+}
+
 
 /* Comments */
 
