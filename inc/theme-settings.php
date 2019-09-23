@@ -19,12 +19,6 @@ if ( ! function_exists( 'understrap_setup_theme_default_settings' ) ) {
 			set_theme_mod( 'understrap_posts_index_style', 'default' );
 		}
 
-		// Sidebar position.
-		$understrap_sidebar_position = get_theme_mod( 'understrap_sidebar_position' );
-		if ( '' == $understrap_sidebar_position ) {
-			set_theme_mod( 'understrap_sidebar_position', 'right' );
-		}
-
 		// Container width.
 		$understrap_container_type = get_theme_mod( 'understrap_container_type' );
 		if ( '' == $understrap_container_type ) {

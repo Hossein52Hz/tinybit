@@ -41,7 +41,7 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 			array(
 				'title'       => __( 'Theme Layout Settings', 'understrap' ),
 				'capability'  => 'edit_theme_options',
-				'description' => __( 'Container width and sidebar defaults', 'understrap' ),
+				'description' => __( 'Container width', 'understrap' ),
 				'priority'    => 160,
 			)
 		);
@@ -95,40 +95,7 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 			)
 		);
 
-		$wp_customize->add_setting(
-			'understrap_sidebar_position',
-			array(
-				'default'           => 'right',
-				'type'              => 'theme_mod',
-				'sanitize_callback' => 'sanitize_text_field',
-				'capability'        => 'edit_theme_options',
-			)
-		);
-
-		$wp_customize->add_control(
-			new WP_Customize_Control(
-				$wp_customize,
-				'understrap_sidebar_position',
-				array(
-					'label'             => __( 'Sidebar Positioning', 'understrap' ),
-					'description'       => __(
-						'Set sidebar\'s default position. Can either be: right, left, both or none. Note: this can be overridden on individual pages.',
-						'understrap'
-					),
-					'section'           => 'understrap_theme_layout_options',
-					'settings'          => 'understrap_sidebar_position',
-					'type'              => 'select',
-					'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
-					'choices'           => array(
-						'right' => __( 'Right sidebar', 'understrap' ),
-						'left'  => __( 'Left sidebar', 'understrap' ),
-						'both'  => __( 'Left & Right sidebars', 'understrap' ),
-						'none'  => __( 'No sidebar', 'understrap' ),
-					),
-					'priority'          => '20',
-				)
-			)
-		);
+		// 
 
 
 
