@@ -111,7 +111,7 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
     $wp_customize->add_setting('understrap_author_options_full_name', array(
         'default'        => __('Enter Full Name', 'understrap'),
 		'capability'     => 'edit_theme_options',
-		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+		'sanitize_callback' => 'sanitize_text_field',
         
     ));
     $wp_customize->add_control('understrap_full_name', array(
@@ -125,7 +125,7 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
     $wp_customize->add_setting('understrap_author_options_career', array(
         'default'        => 'Enter your career',
 		'capability'     => 'edit_theme_options',
-		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+		'sanitize_callback' => 'sanitize_text_field',
 	));
 	
     $wp_customize->add_control('understrap_career', array(
