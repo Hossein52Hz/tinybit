@@ -75,6 +75,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				</ul>
 				<p class="line"></p>
+
+				<?php get_search_form(); ?>
+
 				</div>
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
