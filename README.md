@@ -1,12 +1,12 @@
-Travis build: [![Build Status](https://travis-ci.org/understrap/understrap.svg?branch=master)](https://travis-ci.org/understrap/understrap)
+Travis build: [![Build Status](https://travis-ci.org/tinybit/tinybit.svg?branch=master)](https://travis-ci.org/tinybit/tinybit)
 
-#### See: [Official Demo](https://understrap.com/understrap) | Read: [Official Docs Page](https://understrap.github.io/)
+#### See: [Official Demo](https://tinybit.com/tinybit) | Read: [Official Docs Page](https://tinybit.github.io/)
 
 # UnderStrap WordPress Theme Framework
 
-Website: [https://understrap.com](https://understrap.com)
+Website: [https://tinybit.com](https://tinybit.com)
 
-Child Theme Project: [https://github.com/understrap/understrap-child](https://github.com/understrap/understrap-child)
+Child Theme Project: [https://github.com/tinybit/tinybit-child](https://github.com/tinybit/tinybit-child)
 
 ## About
 
@@ -31,7 +31,7 @@ See [changelog](CHANGELOG.md)
 - Jetpack ready.
 - WooCommerce support.
 - Contact Form 7 support.
-- [Child Theme](https://github.com/holger1411/understrap-child) ready.
+- [Child Theme](https://github.com/holger1411/tinybit-child) ready.
 - Translation ready.
 
 ## Starter Theme + HTML Framework = WordPress Theme Framework
@@ -47,13 +47,13 @@ Some basics about the Sass and CSS files that come with UnderStrap:
 
  ```@import "theme/theme_variables";  // 1. Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
  @import "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // 2. All the Bootstrap stuff - Don´t edit this!
- @import "understrap/understrap"; // 3. Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
+ @import "tinybit/tinybit"; // 3. Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
  @import "../src/fontawesome/scss/font-awesome"; // 4. Font Awesome Icon styles
  // Any additional imported files //
  @import "theme/theme";  // 5. Add your styles into this file
  ```
 
-- Don’t edit the number 2-4 files/filesets listed above or you won’t be able to update Understrap without overwriting your own work!
+- Don’t edit the number 2-4 files/filesets listed above or you won’t be able to update Tinybit without overwriting your own work!
 - Your design goes into: `/sass/theme`. 
   - Add your styles to the `/sass/theme/_theme.scss` file 
   - And your variables to the `/sass/theme/_theme_variables.scss`
@@ -63,8 +63,8 @@ Some basics about the Sass and CSS files that come with UnderStrap:
 There are several ways to install UnderStrap. We'll look at three of them: (1) classic install by uploading UnderStrap to a WordPress install, (2) using npm, and (3) using the theme directory in WordPress. 
 
 ### Classic install
-- Download the understrap folder from GitHub or from [https://understrap.com](https://understrap.com)
-- IMPORTANT: If you download it from GitHub make sure you rename the "understrap-master.zip" file just to "understrap.zip" or you might have problems using child themes!
+- Download the tinybit folder from GitHub or from [https://tinybit.com](https://tinybit.com)
+- IMPORTANT: If you download it from GitHub make sure you rename the "tinybit-master.zip" file just to "tinybit.zip" or you might have problems using child themes!
 - Upload it into your WordPress installation theme subfolder: `/wp-content/themes/`
 - Login to your WordPress backend
 - Go to Appearance → Themes
@@ -73,7 +73,7 @@ There are several ways to install UnderStrap. We'll look at three of them: (1) c
 ### npm install
 - Open your terminal
 - Change to the directory where you want to add UnderStrap
-- Type `npm install understrap`
+- Type `npm install tinybit`
 
 ### WordPress.org install
 - Open your WordPress backend

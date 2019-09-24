@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package understrap
+ * @package tinybit
  */
 
 // Exit if accessed directly.
@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'tinybit_container_type' );
 
 ?>
 
@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php
 						printf(
 							/* translators: %s: query term */
-							esc_html__( 'Search Results for: %s', 'understrap' ),
+							esc_html__( 'Search Results for: %s', 'tinybit' ),
 							'<span>' . get_search_query() . '</span>'
 						);
 						?>
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
+			<?php tinybit_pagination(); ?>
 
 			</div><!-- #closing the primary container -->
 

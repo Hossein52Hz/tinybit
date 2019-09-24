@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  * This theme dos not support of sidebar
- * @package understrap
+ * @package tinybit
  */
 
 // Exit if accessed directly.

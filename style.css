@@ -4,7 +4,7 @@ Theme URI: https://github.com/Hossein52Hz/tinybit
 Author: Hosain Masoudi
 Author URI: https://github.com/Hossein52Hz
 GitHub Theme URI: https://github.com/Hossein52Hz/tinybit/
-Description: A Simple and clean Wordpress theme for Developers and programmers based on Understrap and Main Design is based on Ghostwriter theme. 
+Description: A Simple and clean Wordpress theme for Developers and programmers based on Tinybit and Main Design is based on Ghostwriter theme. 
 Version: 1.0
 License: Tinybit is distributed under the terms of the GNU GPL version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,6 +12,7 @@ Text Domain: tinybit
 Tags: custom-menu, featured-images, theme-options, translation-ready
 
 Resource Licenses:
+Main theme is forked from https://github.com/understrap/understrap (GPLv2 License)
 Main design is based on https://github.com/roryg/ghostwriter (MIT License)
 Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT, documentation under CC BY 3.0.)

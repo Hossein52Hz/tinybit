@@ -4,13 +4,13 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package understrap
+ * @package tinybit
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'tinybit_container_type' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'tinybit' ); ?></a>
 
 		 <nav class="navbar navbar-expand-lg navbar-dark">
 
@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container">
 		<?php endif; ?>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'tinybit' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 			<div id="navbarNavDropdown" class="header-menu navbar-collapse flex-column collapse">
@@ -60,12 +60,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<div class="author-info">
 				
-				<?php if ( get_theme_mod( 'understrap_author_options_full_name' ) ): ?>
-              		<h2 class="full-name"><?php echo esc_attr(get_theme_mod( 'understrap_author_options_full_name' )); ?></h2>
+				<?php if ( get_theme_mod( 'tinybit_author_options_full_name' ) ): ?>
+              		<h2 class="full-name"><?php echo esc_attr(get_theme_mod( 'tinybit_author_options_full_name' )); ?></h2>
             	<?php endif; ?>
 				
-				<?php if ( get_theme_mod( 'understrap_author_options_career' ) ): ?>
-              		<p class="career"><?php echo esc_attr(get_theme_mod( 'understrap_author_options_career' )); ?></p>
+				<?php if ( get_theme_mod( 'tinybit_author_options_career' ) ): ?>
+              		<p class="career"><?php echo esc_attr(get_theme_mod( 'tinybit_author_options_career' )); ?></p>
             	<?php endif; ?>
 				
 				<!-- <p class="line-top"></p> -->
@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						'walker'          => new Tinybit_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
 

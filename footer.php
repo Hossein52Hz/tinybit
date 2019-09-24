@@ -4,13 +4,13 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package understrap
+ * @package tinybit
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'tinybit_container_type' );
 ?>
 
 
@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-						<?php understrap_site_info(); ?>
+						<?php tinybit_site_info(); ?>
 
 					</div><!-- .site-info -->
 
