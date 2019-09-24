@@ -1,6 +1,6 @@
+# Tinybit
 
-
-#### Screenshot
+### Screenshot:
 ![Screenshot](screenshot.png)
 
 # About Tinybit WordPress Theme
