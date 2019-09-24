@@ -484,7 +484,9 @@ section {
     background: #dee2e67a;
     border-radius: 4px;
 }
-
+#single-wrapper .entry-footer a:hover{
+    background: #002975;
+}
 .entry-footer a:hover {
     background: #002975;
     color: #fff !important;
