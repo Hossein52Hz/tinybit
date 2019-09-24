@@ -26,6 +26,9 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 ## RTL styles?
 Not now.
 
+
+### Blank Template
+
 The `blank.php` template is useful when working with various page builders and can be used as a starting blank canvas.
 
 ### Full Width Template
