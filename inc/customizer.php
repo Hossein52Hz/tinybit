@@ -196,6 +196,27 @@ if ( ! function_exists( 'tinybit_theme_customize_register' ) ) {
 	));
 
 
+	//  =============================
+    //  = Footer section              =
+    //  =============================
+    $wp_customize->add_section('tinybit_footer', array(
+        'title'    => __('Footer Note/Link', 'tinybit'),
+        'priority' => 50,
+    ));
+
+    $wp_customize->add_setting('tinybit_theme_options_copyright', array( 
+		'default'   => '<a href="http://wordpress.org/" >Proudly powered by WordPress</a> | Theme: Tinybit by <a href="http://tinybit.com">Hosain Masoudi</a>', 
+        'type' => 'theme_mod', 
+        'sanitize_callback' => 'wp_kses_post', 
+        'transport'   => 'refresh'
+    ));
+    $wp_customize->add_control('tinybit_copyright_text', array(
+        'label'      => __('You can add text/html', 'tinybit'),
+        'section'    => 'tinybit_footer',
+        'type'       => 'textarea',
+        'settings'   => 'tinybit_theme_options_copyright',
+    ));
+
 	}
 } // endif function_exists( 'tinybit_theme_customize_register' ).
 add_action( 'customize_register', 'tinybit_theme_customize_register' );

@@ -26,7 +26,9 @@ $container = get_theme_mod( 'tinybit_container_type' );
 
 					<div class="site-info">
 
-						<?php tinybit_site_info(); ?>
+					<?php if ( get_theme_mod( 'tinybit_theme_options_copyright' ) ): ?>
+    				<?php echo get_theme_mod( 'tinybit_theme_options_copyright' ); ?>
+    				<?php endif;?>
 
 					</div><!-- .site-info -->
 
