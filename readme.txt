@@ -43,4 +43,4 @@ and of course
 - jQuery: https://jquery.org | (Code licensed under MIT)
 - WP Bootstrap Navwalker by Edward McIntyre: https://github.com/twittem/wp-bootstrap-navwalker | GNU GPL
 - Bootstrap Gallery Script based on Roots Sage Gallery: https://github.com/roots/sage/blob/5b9786b8ceecfe717db55666efe5bcf0c9e1801c/lib/gallery.php
-
+- Vazir Font: https://github.com/rastikerdar/vazir-font (Public domain)
