@@ -1,0 +1,386 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tinybit\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
+"POT-Creation-Date: 2019-09-25 19:37+0330\n"
+"PO-Revision-Date: 2019-09-25 19:39+0330\n"
+"Last-Translator: Hossein52hz <csmasoudi@gmail.com>\n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2;"
+"esc_html\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: inc\n"
+"X-Poedit-SearchPath-1: page-templates\n"
+"X-Poedit-SearchPath-2: loop-templates\n"
+"X-Poedit-SearchPath-3: header.php\n"
+"X-Poedit-SearchPath-4: footer.php\n"
+"X-Poedit-SearchPath-5: author.php\n"
+"X-Poedit-SearchPath-6: page.php\n"
+"X-Poedit-SearchPath-7: searchform.php\n"
+"X-Poedit-SearchPath-8: page.php\n"
+"X-Poedit-SearchPath-9: single.php\n"
+"X-Poedit-SearchPath-10: search.php\n"
+"X-Poedit-SearchPath-11: comments.php\n"
+"X-Poedit-SearchPath-12: archive.php\n"
+"X-Poedit-SearchPath-13: index.php\n"
+"X-Poedit-SearchPath-14: 404.php\n"
+"X-Poedit-SearchPath-15: functions.php\n"
+
+#: 404.php:30
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "اوپس! این صفحه نمی تواند پیدا شود."
+
+#: 404.php:36
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"به نظر می رسد چیزی یافت نشد. شاید جستجو در یکی از لینک های زیر کمکتان کند. "
+"آیا مایل هستید؟"
+
+#: 404.php:46
+msgid "Most Used Categories"
+msgstr "دسته بندی های محبوب"
+
+#: 404.php:69
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "یک نگاهی هم به آرشیو ماهیانه کنید. %1$s"
+
+#: author.php:37
+msgid "About:"
+msgstr "درباره:"
+
+#: author.php:46 inc/custom-comments.php:37
+msgid "Website"
+msgstr "وبسایت"
+
+#: author.php:53
+msgid "Profile"
+msgstr "پروفایل"
+
+#: author.php:59
+msgid "Posts by"
+msgstr "Posts byش"
+
+#: author.php:73
+msgid "Permanent Link:"
+msgstr ""
+
+#: author.php:78
+msgid "in"
+msgstr "موضوع"
+
+#: comments.php:37
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "یک دیدگاه برای &ldquo;%s&rdquo;"
+
+#: comments.php:44
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s دیدگاه در مورد &ldquo;%2$s&rdquo;"
+
+#: comments.php:62 comments.php:97
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:66 comments.php:101
+msgid "&larr; Older Comments"
+msgstr "&larr; دیدگاه‌های قدیمی‌تر"
+
+#: comments.php:72 comments.php:107
+msgid "Newer Comments &rarr;"
+msgstr "دیدگاه‌های جدیدتر &rarr;"
+
+#: comments.php:122
+msgid "Comments are closed."
+msgstr "ارسال دیدگاه بسته است."
+
+#: header.php:31
+msgid "Skip to content"
+msgstr "پرش به محتوا"
+
+#: header.php:39
+msgid "Toggle navigation"
+msgstr "ناوبری پست قبلی و پست بعدی"
+
+#: inc/class-wp-bootstrap-navwalker.php:374
+msgid "Add a menu"
+msgstr "افزودن منو"
+
+#: inc/custom-comments.php:31
+msgid "Name"
+msgstr "نام"
+
+#: inc/custom-comments.php:34
+msgid "Email"
+msgstr "ایمیل"
+
+#: inc/custom-comments.php:41
+msgid ""
+"Save my name, email, and website in this browser for the next time I comment"
+msgstr "نام، ایمیل و وبسایت من را ذخیره کن برای دفعات بعدی"
+
+#: inc/custom-comments.php:62
+msgctxt "noun"
+msgid "Comment"
+msgstr "دیدگاه"
+
+#: inc/customizer.php:42
+msgid "Theme Layout Settings"
+msgstr "تنظیمات طرح قالب"
+
+#: inc/customizer.php:44
+msgid "Container width"
+msgstr ""
+
+#: inc/customizer.php:84
+msgid "Container Width"
+msgstr ""
+
+#: inc/customizer.php:85
+msgid "Choose between Bootstrap's container and container-fluid"
+msgstr ""
+
+#: inc/customizer.php:90
+msgid "Fixed width container"
+msgstr ""
+
+#: inc/customizer.php:91
+msgid "Full width container"
+msgstr ""
+
+#: inc/customizer.php:106
+msgid "Author Profile"
+msgstr "پروفایل نویسنده"
+
+#: inc/customizer.php:112
+msgid "Enter Full Name"
+msgstr ""
+
+#: inc/customizer.php:118
+msgid "Full Name"
+msgstr "نام و فامیل"
+
+#: inc/customizer.php:132
+msgid "Career"
+msgstr "تخصص"
+
+#: inc/customizer.php:140
+msgid "Enter Linkedin URL"
+msgstr ""
+
+#: inc/customizer.php:145
+msgid "Linkedin URL"
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "Enter Github URL"
+msgstr ""
+
+#: inc/customizer.php:157
+msgid "Github URL"
+msgstr ""
+
+#: inc/customizer.php:164
+msgid "Enter Gitlab URL"
+msgstr ""
+
+#: inc/customizer.php:169
+msgid "Gitlab URL"
+msgstr ""
+
+#: inc/customizer.php:176
+msgid "Enter Twitter URL"
+msgstr ""
+
+#: inc/customizer.php:181
+msgid "Twitter URL"
+msgstr ""
+
+#: inc/customizer.php:188
+msgid "Enter Facebook URL"
+msgstr ""
+
+#: inc/customizer.php:193
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/customizer.php:203
+msgid "Footer Note/Link"
+msgstr "نوشته فوتر(حق کپی رایت)"
+
+#: inc/customizer.php:214
+msgid "You can add text/html"
+msgstr "شما می‌توانید متن یا حتی کد html وارد کنید"
+
+#: inc/extras.php:97
+msgid "Post navigation"
+msgstr "ناوبری پست قبلی و پست بعدی"
+
+#: inc/extras.php:101
+msgctxt "Previous post link"
+msgid "<i class=\"fa fa-angle-left\"></i>&nbsp;%title"
+msgstr "<i class=\"fa fa-angle-right\"></i>&nbsp;%title"
+
+#: inc/extras.php:104
+msgctxt "Next post link"
+msgid "%title&nbsp;<i class=\"fa fa-angle-right\"></i>"
+msgstr "%title&nbsp;<i class=\"fa fa-angle-left\"></i>"
+
+#: inc/hooks.php:31
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: inc/hooks.php:34
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: inc/hooks.php:39
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: inc/hooks.php:41
+msgid "http://tinybit.com"
+msgstr ""
+
+#: inc/hooks.php:45
+#, php-format
+msgid "Version: %1$s"
+msgstr "نسخه: %1$s"
+
+#: inc/pagination.php:24
+msgid "&laquo;"
+msgstr ""
+
+#: inc/pagination.php:25
+msgid "&raquo;"
+msgstr ""
+
+#: inc/pagination.php:26
+msgid "Posts navigation"
+msgstr "ناوبری پست قبلی و پست بعدی"
+
+#: inc/setup.php:48
+msgid "Primary Menu"
+msgstr "منوی اصلی"
+
+#: inc/setup.php:134
+msgid "Read More..."
+msgstr "ادامه مطلب..."
+
+#: inc/template-tags.php:31
+msgctxt "post date"
+msgid "Posted on"
+msgstr "انتشار در"
+
+#: inc/template-tags.php:39
+msgctxt "post author"
+msgid "by"
+msgstr "توسط"
+
+#: inc/template-tags.php:39
+msgctxt "post author"
+msgid "Posted by"
+msgstr "نوشته‌های توسط"
+
+#: inc/template-tags.php:62 inc/template-tags.php:68
+msgid ", "
+msgstr "، "
+
+#: inc/template-tags.php:65
+#, php-format
+msgid "Posted in %s"
+msgstr "دسته‌بندی‌ها %s"
+
+#: inc/template-tags.php:71
+#, php-format
+msgid "Tagged %s"
+msgstr "برچسب‌ها %s"
+
+#: inc/template-tags.php:76
+msgid "Leave a comment"
+msgstr "پیام بگذارید"
+
+#: inc/template-tags.php:76
+msgid "1 Comment"
+msgstr "1 دیدگاه"
+
+#: inc/template-tags.php:76
+msgid "% Comments"
+msgstr "% دیدگاه"
+
+#: inc/template-tags.php:82
+#, php-format
+msgid "Edit %s"
+msgstr "ویرایش %s"
+
+#: loop-templates/content-none.php:18
+msgid "Nothing Found"
+msgstr "چیزی یافت نشد"
+
+#: loop-templates/content-none.php:27
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"آماده انتشار اولین پست خود هستید؟<a href=\"%1$s\">از اینجا شروع کنید</a>."
+
+#: loop-templates/content-none.php:35
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"با عرض پوزش، اما هیچ چیز مطابق با شرایط جستجوی شما یافت نشد. لطفا با برخی از "
+"کلمات کلیدی دوباره امتحان کنید."
+
+#: loop-templates/content-none.php:40
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"به نظر می رسد ما نمی توانیم چیزی که به دنبال آن هستید را بیابیم. شاید جستجو "
+"بتواند کمکتان کند."
+
+#: loop-templates/content-page.php:29 loop-templates/content-single.php:35
+msgid "Pages:"
+msgstr "برگه‌ها:"
+
+#: loop-templates/content-page.php:39
+msgid "Edit"
+msgstr "ویرایش"
+
+#: search.php:43
+#, php-format
+msgid "Search Results for: %s"
+msgstr "نتایج جستجو برای: %s"
+
+#: searchform.php:13 searchform.php:19
+msgid "Search"
+msgstr "جستجو"
+
+#: searchform.php:16
+msgid "Search &hellip;"
+msgstr "جست و جو &hellip;"
+
+#~ msgctxt "post author"
+#~ msgid "by %s"
+#~ msgstr "توسط %s"

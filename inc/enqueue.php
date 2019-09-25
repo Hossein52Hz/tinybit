@@ -19,8 +19,13 @@ if ( ! function_exists( 'tinybit_scripts' ) ) {
 
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . '/css/theme.min.css' );
 		wp_enqueue_style( 'tinybit-styles', get_template_directory_uri() . '/css/theme.min.css', array(), $css_version );
-		wp_enqueue_style( 'tinybit-main-styles', get_stylesheet_uri(), array() );
+		wp_enqueue_style( 'tinybit-style', get_stylesheet_uri(), array() );
 		
+		//RTL Support
+		wp_style_add_data( 'tinybit-style-rtl', 'rtl', 'replace' ); 
+		
+		// RTL Font (Vazir)
+		wp_enqueue_style( 'tinybit-vazir-font', 'https://cdn.rawgit.com/rastikerdar/vazir-font/v21.0.1/dist/font-face.css', array(), '21.0.1' );
 
 		wp_enqueue_script( 'jquery' );
 
