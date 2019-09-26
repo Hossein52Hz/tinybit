@@ -88,7 +88,8 @@ section {
 #single-wrapper,
 #wrapper-footer,
 #search-wrapper,
-#author-wrapper {
+#author-wrapper,
+#error-404-wrapper {
     margin-right: 17rem;
     margin-left: 0;
 }
@@ -185,7 +186,8 @@ section {
 #archive-wrapper #primary,
 #page-wrapper #primary,
 #single-wrapper #primary,
-#search-wrapper #primary {
+#search-wrapper #primary,
+#error-404-wrapper #primary {
     padding: 20px 110px;
 }
 
@@ -193,7 +195,8 @@ section {
 #archive-wrapper #main,
 #page-wrapper #main,
 #single-wrapper #main,
-#search-wrapper #main {
+#search-wrapper #main,
+#error-404-wrapper #main {
     border-top: 5px solid #212121;
     padding-top: 2px;
 }
@@ -473,7 +476,7 @@ section {
 }
 
 
-/* Single/Page */
+/* Single/Page/404 */
 
 #single-wrapper #main,
 #page-wrapper #main {
@@ -549,7 +552,14 @@ padding-right: 0;
 #single-wrapper .entry-footer a{
     margin-bottom: 0;
 }
-
+.error-404{
+    padding: 40px 0;
+    text-align: center;
+}
+#error-404-wrapper #searchform{
+    max-width: 400px;
+    margin: 0 auto;
+}
 /* Pages: Archive/Category/Tag */
 #archive-wrapper .page-title,
 #search-wrapper .page-title {
@@ -662,7 +672,8 @@ padding-right: 0;
     #single-wrapper,
     #wrapper-footer,
     #search-wrapper,
-    #author-wrapper {
+    #author-wrapper,
+    #error-404-wrapper {
         margin-right: 0;
     }
 
@@ -715,7 +726,8 @@ padding-right: 0;
     #archive-wrapper #primary,
     #page-wrapper #primary,
     #single-wrapper #primary,
-    #search-wrapper #primary {
+    #search-wrapper #primary,
+    #error-404-wrapper #primary {
         padding: 10px;
     }
 
