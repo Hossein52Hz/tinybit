@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: tinybit\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2019-09-25 19:37+0330\n"
-"PO-Revision-Date: 2019-09-25 19:39+0330\n"
+"PO-Revision-Date: 2019-09-27 01:33+0330\n"
 "Last-Translator: Hossein52hz <csmasoudi@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -40,15 +40,15 @@ msgstr ""
 
 #: 404.php:30
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "اوپس! این صفحه نمی تواند پیدا شود."
+msgstr "متاسفیم! صفحه مورد نظر وجود ندارد."
 
 #: 404.php:36
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"به نظر می رسد چیزی یافت نشد. شاید جستجو در یکی از لینک های زیر کمکتان کند. "
-"آیا مایل هستید؟"
+"به نظر می رسد چیزی یافت نشد. شاید گزینه جستجوی زیر کمک‌تان کند. آیا به دنبال "
+"کلمه دیگری هستید؟"
 
 #: 404.php:46
 msgid "Most Used Categories"
